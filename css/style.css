@@ -1,0 +1,41 @@
+/* Mobile first styles go here */
+/* Universal */
+
+:root {
+	--bg-color: #181818;
+	--menu-bar-color: #121212;
+	--card-color: #404040;
+	--card-hover-color: #282828;
+	--primary-text-color: #ffffff;
+	--secondary-text-color: #b3b3b3;
+}
+
+html {
+	text-align: center;
+	font-size: calc(1em + 1vw);
+	font-family: 'Times New Roman', Times, serif;
+
+	color: var(--primary-text-color);
+	background-color: var(--bg-color);
+
+	box-sizing: border-box;
+}
+
+.flexbox {
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	--margin: 0.5rem;
+	--mod: calc(40rem - 100%);
+	margin: calc(var(--margin) -1);
+}
+
+.flexbox > * {
+	flex-grow: 1;
+	flex-basis: calc(val(--mod) * 999);
+	margin: var(--margin);
+}
