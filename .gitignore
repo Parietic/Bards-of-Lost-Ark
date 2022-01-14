@@ -12,4 +12,4 @@
 *.vsix
 
 # Not needed yet
-scripts/
+scripts/jquery.min.js

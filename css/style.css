@@ -8,6 +8,8 @@
 	--card-hover-color: #282828;
 	--primary-text-color: #ffffff;
 	--secondary-text-color: #b3b3b3;
+
+	--body-offset: 0;
 }
 
 html {
@@ -19,6 +21,10 @@ html {
 	background-color: var(--bg-color);
 
 	box-sizing: border-box;
+}
+
+body {
+	padding-top: var(--body-offset);
 }
 
 .flexbox {
