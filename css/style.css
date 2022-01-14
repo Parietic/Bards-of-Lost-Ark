@@ -39,3 +39,14 @@ html {
 	flex-basis: calc(val(--mod) * 999);
 	margin: var(--margin);
 }
+
+/* Nav bar */
+nav {
+	width: 100%;
+
+	background-color: var(--menu-bar-color);
+	border-bottom: 1px solid var(--card-color);
+
+	position: fixed;
+	top: 0;
+}
