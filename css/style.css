@@ -238,6 +238,27 @@ figure figcaption {
 	color: var(--primary-text-color);
 }
 
+/* Footer section */
+
+footer {
+	background-color: var(--menu-bar-color);
+}
+
+footer ul {
+	margin: 0;
+	padding: 1rem 0 3rem 0;
+	list-style: none;
+}
+
+footer li {
+	color: var(--secondary-text-color);
+	font-size: 0.75rem;
+}
+
+footer a {
+	color: var(--secondary-text-color);
+}
+
 /* Break point for desktop/landscape */
 @media only screen and (min-width: 730px) {
 	/* Nav bar */
