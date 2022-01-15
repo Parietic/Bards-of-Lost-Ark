@@ -31,18 +31,16 @@ body {
 	display: flex;
 
 	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
 	align-items: center;
 
-	--margin: 0.5rem;
-	--mod: calc(40rem - 100%);
+	--margin: 0.25rem;
+	--mod: calc(540px - 100%);
 	margin: calc(var(--margin) -1);
 }
 
 .flexbox > * {
 	flex-grow: 1;
-	flex-basis: calc(val(--mod) * 999);
+	flex-basis: calc(var(--mod) * 999);
 	margin: var(--margin);
 }
 
@@ -55,4 +53,41 @@ nav {
 
 	position: fixed;
 	top: 0;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0.5vw;
+}
+
+nav button {
+	border: 0;
+	color: var(--primary-text-color);
+	background-color: inherit;
+}
+
+nav li button {
+	text-decoration: underline;
+}
+
+#logo {
+	font-size: 1.5em;
+	font-family: 'Luxurious Roman', 'Times New Roman', Times, serif;
+	flex-grow: 0.5;
+}
+
+/* Break point for desktop/landscape */
+@media only screen and (min-width: 540px) {
+	/* Nav bar */
+	#logo {
+		text-align: left;
+	}
+	nav ul {
+		text-align: right;
+	}
 }
