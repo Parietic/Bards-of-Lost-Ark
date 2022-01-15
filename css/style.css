@@ -14,7 +14,7 @@
 
 html {
 	text-align: center;
-	font-size: calc(1em + 1vw);
+	font-size: calc(1em + 0.5vw);
 	font-family: 'Times New Roman', Times, serif;
 
 	color: var(--primary-text-color);
@@ -62,7 +62,7 @@ nav ul {
 
 nav li {
 	display: inline;
-	margin: 0 0.5vw;
+	margin: 0 0.75vw;
 }
 
 nav button {
