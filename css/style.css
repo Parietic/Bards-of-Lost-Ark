@@ -177,13 +177,18 @@ figure figcaption {
 }
 
 /* Our team section */
+
+#our-team-cards {
+	justify-content: center;
+}
+
 .team-card {
 	background-color: var(--card-hover-color);
 	box-shadow: 0 0 10px 1px black;
 	border-radius: 1px;
-
-	width: 33%;
 	overflow-x: hidden;
+
+	max-width: 75%;
 }
 
 .team-card header {
