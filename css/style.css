@@ -82,6 +82,36 @@ nav li button {
 	flex-grow: 0.5;
 }
 
+/* Mission statement */
+#statement {
+	background-image: url(../resources/bard-banner.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	min-height: calc(100vmin - var(--body-offset));
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+#statement > * {
+	text-align: left;
+
+	background-color: rgba(37, 37, 37, 0.75);
+
+	margin: 0;
+	padding-left: 1rem;
+	max-width: min(100vw, 800px);
+}
+#statement :nth-child(1) {
+	padding-top: 1rem;
+}
+#statement :last-child {
+	padding-bottom: 1rem;
+}
+
 /* Break point for desktop/landscape */
 @media only screen and (min-width: 540px) {
 	/* Nav bar */
@@ -90,5 +120,15 @@ nav li button {
 	}
 	nav ul {
 		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	/* Mission statement */
+	#statement :nth-child(1) {
+		border-top-right-radius: 3px;
+	}
+	#statement :last-child {
+		border-bottom-right-radius: 3px;
 	}
 }
