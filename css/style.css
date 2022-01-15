@@ -52,6 +52,7 @@ nav {
 	border-bottom: 1px solid var(--card-color);
 
 	position: fixed;
+	z-index: 1;
 	top: 0;
 }
 
