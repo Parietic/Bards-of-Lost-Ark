@@ -27,6 +27,30 @@ body {
 	padding-top: var(--body-offset);
 }
 
+hr {
+	/* Section heder underline */
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(179, 179, 179, 0),
+		rgba(179, 179, 179, 0.75),
+		rgba(179, 179, 179, 0)
+	);
+
+	margin: -0.5rem;
+}
+
+body > hr {
+	/* Shadow between sections */
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(179, 179, 179, 0.5);
+
+	background-image: none;
+	margin: 0;
+}
+
 .flexbox {
 	display: flex;
 
