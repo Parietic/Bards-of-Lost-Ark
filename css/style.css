@@ -51,6 +51,11 @@ body > hr {
 	margin: 0;
 }
 
+main {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
 .flexbox {
 	display: flex;
 
