@@ -43,7 +43,7 @@ body > hr {
 	/* Shadow between sections */
 	height: 12px;
 	border: 0;
-	box-shadow: inset 0 12px 12px -12px rgba(179, 179, 179, 0.5);
+	box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 
 	background-image: none;
 	margin: 0;
@@ -174,6 +174,63 @@ figure figcaption {
 
 .flex-invert {
 	flex-direction: row-reverse;
+}
+
+/* Our team section */
+.team-card {
+	background-color: var(--card-hover-color);
+	box-shadow: 0 0 10px 1px black;
+	border-radius: 1px;
+
+	width: 33%;
+	overflow-x: hidden;
+}
+
+.team-card header {
+	background-color: var(--card-color);
+	box-shadow: 0px 0px 5px 1px black;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: flex-end;
+	gap: 0.25rem;
+
+	text-align: left;
+	padding: 0.25rem;
+}
+
+.team-card header * {
+	margin: 0;
+}
+
+.avatar {
+	width: 100%;
+	display: inline;
+	object-fit: cover;
+}
+
+.company-pos {
+	font-weight: normal;
+	color: var(--secondary-text-color);
+}
+
+.bio,
+.team-card address {
+	font-size: 0.75rem;
+}
+
+.team-card address ul {
+	padding: 0;
+	list-style: none;
+}
+
+.team-card address li {
+	display: inline;
+	margin: 0 0.25rem;
+}
+
+.team-card a {
+	color: var(--primary-text-color);
 }
 
 /* Break point for desktop/landscape */
