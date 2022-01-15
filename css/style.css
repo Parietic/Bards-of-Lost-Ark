@@ -81,7 +81,7 @@ nav {
 	border-bottom: 1px solid var(--card-color);
 
 	position: fixed;
-	z-index: 1;
+	z-index: 5;
 	top: 0;
 }
 
@@ -139,6 +139,26 @@ nav li button {
 }
 #statement :last-child {
 	padding-bottom: 1rem;
+}
+
+/* Dangers section */
+figure {
+	margin: 0;
+	position: relative;
+}
+
+figure img {
+	width: 100%;
+}
+
+figure figcaption {
+	font-size: 1rem;
+	background-color: rgba(37, 37, 37, 0.75);
+
+	position: absolute;
+	z-index: 1;
+	bottom: 1rem;
+	padding: 0.25rem;
 }
 
 /* Break point for desktop/landscape */
